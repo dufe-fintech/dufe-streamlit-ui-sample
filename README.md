@@ -105,10 +105,10 @@ How to Run the App
 
 2）Clone 你的仓库到本地
 
-把下面命令中的仓库地址替换成你自己的：
+把下面命令中的仓库地址替换成你自己的(dufe-fintech->你的github名字)：
 
 ```bash
-git clone https://github.com/your-username/dufe-streamlit-ui-sample.git
+git clone https://github.com/dufe-fintech/dufe-streamlit-ui-sample.git
 cd dufe-streamlit-ui-sample
 ```
 
@@ -124,28 +124,34 @@ uv --version
 如果没有安装，请先安装 uv。
 
 macOS / Linux
-
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
 Windows PowerShell
-
+```bash
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
 
 安装完成后，建议重新打开终端，再次检查：
 
+```bash
 uv --version
+```
 
 4）进入项目目录并查看文件
 
 进入项目目录后，你可以先看一下目录中有哪些文件。
 
 macOS / Linux
-
+```bash
 ls
+```
 
 Windows PowerShell
-
+```bash
 dir
+```
 
 你通常会看到类似这样的文件：
 
@@ -192,24 +198,27 @@ uv add streamlit pandas
 7）运行项目
 
 执行下面命令启动应用：
-
+```bash
 uv run streamlit run Sample.py
+```
 
 运行成功后，终端通常会显示类似下面的本地地址：
-
+```bash
 http://localhost:8501
+```
 
 然后你可以在浏览器中打开这个地址，就能看到页面效果。
 
 8）快速运行版
 
 如果你的电脑已经安装好了 uv，那么从 clone 到运行，可以直接依次执行下面命令：
-
+```bash
 git clone https://github.com/dufe-fintech/dufe-streamlit-ui-sample.git
 cd dufe-streamlit-ui-sample
 uv init
 uv add streamlit pandas
 uv run streamlit run Sample.py
+```
 
 --------------------------------------------------
 Project Structure
@@ -243,20 +252,34 @@ What Each Command Does
 --------------------------------------------------
 
 这里对核心命令做一个非常初学者友好的解释。
-
+```bash
 git clone
+```
+
 把 GitHub 上的项目下载到本地电脑。
 
+```bash
 cd dufe-streamlit-ui-sample
+```
+
 进入项目文件夹。
 
+```bash
 uv init
+```
+
 把当前目录初始化为一个由 uv 管理的 Python 项目。
 
+```bash
 uv add streamlit pandas
+```
+
 安装依赖，并把依赖记录到项目配置中。
 
+```bash
 uv run streamlit run Sample.py
+```
+
 在项目环境中运行 Streamlit 程序。
 
 --------------------------------------------------
@@ -309,8 +332,9 @@ Common Issues
 - uv 没有加入系统 PATH
 
 可以先检查：
-
+```bash
 uv --version
+```
 
 如果还不行，请重新安装一次，并重新打开终端。
 
@@ -325,16 +349,19 @@ http://localhost:8501
 请先确认项目目录中是否真的存在这个文件。
 
 macOS / Linux
-
+```bash
 ls
+```
 
 Windows PowerShell
-
+```bash
 dir
+```
 
 如果文件名不是 Sample.py，请按实际文件名修改运行命令，例如：
-
+```bash
 uv run streamlit run your_file_name.py
+```
 
 4. CSV 文件上传后没有显示内容
 
@@ -431,13 +458,14 @@ Suggested Git Commits
 --------------------------------------------------
 
 如果你在教学中一步一步演示，也可以顺手做几次提交，例如：
-
+```bash
 git add .
 git commit -m "init project with uv"
 git commit -m "add streamlit and pandas with uv"
 git commit -m "update README for uv workflow"
+```
 
-这样学生还能顺便看到 Git 的基本使用流程。
+这样就能够顺便看到 Git 的基本使用流程。
 
 --------------------------------------------------
 License
@@ -470,6 +498,9 @@ A Note for Beginners
 
 先跑起来，再慢慢看懂。
 
-祝你学习顺利、玩得开心！
-有问题请联系：
-刘老师（fintechlab@dufe.edu.cn）
+**祝你学习顺利、玩得开心！**
+
+*有问题请联系：*
+**刘老师（fintechlab@dufe.edu.cn）**
+
+
