@@ -167,9 +167,9 @@ dir
 5）用 uv 初始化项目
 
 在项目目录中运行：
-
+```bash
 uv init
-
+```
 这一句可以简单理解为：
 
 告诉 uv：从现在开始，这个目录是一个 Python 项目，请帮我管理它。
@@ -185,9 +185,9 @@ uv init
 - pandas
 
 安装命令如下：
-
+```bash
 uv add streamlit pandas
-
+```
 这一句和传统的 pip install ... 有一点区别：
 
 - pip install 主要是把包装到当前环境里
