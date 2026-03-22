@@ -107,6 +107,7 @@ How to Run the App
 
 把下面命令中的仓库地址替换成你自己的：
 
+```bash
 git clone https://github.com/your-username/dufe-streamlit-ui-sample.git
 cd dufe-streamlit-ui-sample
 
